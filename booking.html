@@ -1,0 +1,96 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Indie+Flower&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Book us</title>
+  </head>
+  <body>
+    <section id="banner-booking">
+      <img src="img/logo.png" class="logo" />
+
+      <div class="banner-text"></div>
+      <div class="container">
+        <form>
+          <h1>Hair Studio</h1>
+          <p>book us and save your time</p>
+          <input type="text" placeholder="Name" /><br />
+          <input type="text" placeholder="Mobile" /><br />
+          <input type="text" placeholder="E-mail" /><br />
+          <input type="datetime-local" placeholder="Date" id="" />
+          <select name="cars" id="d_method">
+            <option value="">Service Delivery Method</option>
+            <option value="you">Im came to saloon</option>
+            <option value="we">We are came to your home</option>
+          </select>
+          <input type="button" value="Book" /><br />
+          
+        </form>
+
+        <div class="drops">
+          <div class="drop drop-1"></div>
+          <div class="drop drop-2"></div>
+          <div class="drop drop-3"></div>
+          <div class="drop drop-4"></div>
+          <div class="drop drop-5"></div>
+        </div>
+      </div>
+    </section>
+
+    <nav>
+      <div id="sideNav">
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">TESTIMONIALS</a></li>
+            <li><a href="#">MEET US</a></li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+
+    <div id="menuBtn">
+      <img src="img/menu.png" id="menu" />
+    </div>
+
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var sideNav = document.getElementById("sideNav");
+      var menu = document.getElementById("menu");
+
+      sideNav.style.right = "-250px";
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+          menu.src = "img/close.png";
+        } else {
+          sideNav.style.right = "-250px";
+          menu.src = "img/menu.png";
+        }
+      };
+    </script>
+  </body>
+</html>
